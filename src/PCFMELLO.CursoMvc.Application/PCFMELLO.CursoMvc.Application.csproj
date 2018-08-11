@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D44D384-0BBD-4350-B430-DDE2458D6427}</ProjectGuid>
+    <ProjectGuid>{88911E63-2F1F-42FA-82CF-52881C3DF221}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PCFMELLO.CursoMvc.Domain</RootNamespace>
-    <AssemblyName>PCFMELLO.CursoMvc.Domain</AssemblyName>
+    <RootNamespace>PCFMELLO.CursoMvc.Application</RootNamespace>
+    <AssemblyName>PCFMELLO.CursoMvc.Application</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,14 +31,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Cliente.cs" />
-    <Compile Include="Entities\Endereco.cs" />
-    <Compile Include="Interfaces\Repository\IClienteRepository.cs" />
-    <Compile Include="Interfaces\Repository\IRepository.cs" />
+    <Compile Include="ClienteAppService.cs" />
+    <Compile Include="Interfaces\IClienteAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\PCFMELLO.CursoMvc.Domain\PCFMELLO.CursoMvc.Domain.csproj">
+      <Project>{6D44D384-0BBD-4350-B430-DDE2458D6427}</Project>
+      <Name>PCFMELLO.CursoMvc.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PCFMELLO.CursoMvc.Infra.Data\PCFMELLO.CursoMvc.Infra.Data.csproj">
+      <Project>{317BF6DB-ED5C-4D27-A0B1-4C9AA7DD5BC9}</Project>
+      <Name>PCFMELLO.CursoMvc.Infra.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

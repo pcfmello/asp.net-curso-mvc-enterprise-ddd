@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCFMELLO.CursoMvc.Domain", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCFMELLO.CursoMvc.Infra.Data", "src\PCFMELLO.CursoMvc.Infra.Data\PCFMELLO.CursoMvc.Infra.Data.csproj", "{317BF6DB-ED5C-4D27-A0B1-4C9AA7DD5BC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCFMELLO.CursoMvc.Application", "src\PCFMELLO.CursoMvc.Application\PCFMELLO.CursoMvc.Application.csproj", "{88911E63-2F1F-42FA-82CF-52881C3DF221}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{317BF6DB-ED5C-4D27-A0B1-4C9AA7DD5BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{317BF6DB-ED5C-4D27-A0B1-4C9AA7DD5BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{317BF6DB-ED5C-4D27-A0B1-4C9AA7DD5BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88911E63-2F1F-42FA-82CF-52881C3DF221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88911E63-2F1F-42FA-82CF-52881C3DF221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88911E63-2F1F-42FA-82CF-52881C3DF221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88911E63-2F1F-42FA-82CF-52881C3DF221}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{F5AC32F1-821F-43E9-8D3E-DB4775FFBCA0} = {CDFF404C-3A4D-4A0B-A447-683E76B0E995}
 		{6D44D384-0BBD-4350-B430-DDE2458D6427} = {37D3C339-FB81-4EFD-BEEF-6A63A63E5B90}
 		{317BF6DB-ED5C-4D27-A0B1-4C9AA7DD5BC9} = {12704DB0-5005-48EB-B93D-5BAD7F557709}
+		{88911E63-2F1F-42FA-82CF-52881C3DF221} = {C8657202-7B39-42C1-A154-814D65EC0549}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDC503D6-4AFE-47C9-B7F4-29B1999C18FB}
