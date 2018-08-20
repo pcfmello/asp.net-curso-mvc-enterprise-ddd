@@ -3,9 +3,6 @@ using PCFMELLO.CursoMvc.Domain.Entities;
 using PCFMELLO.CursoMvc.Infra.Data.Repository;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PCFMELLO.CursoMvc.Application
 {
@@ -20,23 +17,23 @@ namespace PCFMELLO.CursoMvc.Application
 
         public Cliente Atualizar(Cliente cliente)
         {
-            throw new NotImplementedException();
+            return _clienteRepository.Atualizar(cliente);
         }
 
 
         public Cliente ObterPorCpf(string cpf)
         {
-            throw new NotImplementedException();
+            return _clienteRepository.ObterPorCpf(cpf);
         }
 
         public Cliente ObterPorEmail(string email)
         {
-            throw new NotImplementedException();
+            return _clienteRepository.ObterPorEmail(email);
         }
 
         public Cliente ObterPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _clienteRepository.ObterPorId(id);
         }
 
         public IEnumerable<Cliente> ObterTodos()
@@ -46,13 +43,13 @@ namespace PCFMELLO.CursoMvc.Application
 
         public void Remover(Guid id)
         {
-            throw new NotImplementedException();
+            _clienteRepository.Remover(id);
         }
 
         public void Dispose()
         {
-            _clienteRepository.Dispose();
-            GC.SuppressFinalize(this);
+            _clienteRepository.Dispose(); // Repositório será destruido
+            GC.SuppressFinalize(this); // Garbage Collector vai suprimir essa classe de cliente
         }
     }
 }
